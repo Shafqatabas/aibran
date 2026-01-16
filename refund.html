@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VirtualBrain AI – Smart AI Assistant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">VirtualBrain AI</div>
+
+  <!-- Hamburger for mobile -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <!-- Nav links -->
+  <div class="nav-links" id="navLinks">
+    <a href="./index.html">Home</a>
+    <a href="./services.html">Services</a>
+    <a href="./pricing.html">Pricing</a>
+    <a href="./contact.html">Contact</a>
+    <span class="close" id="closeMenu">&times;</span>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Power Your Business with AI</h1>
+    <p>VirtualBrain AI gives you a 24/7 intelligent assistant that chats with your customers, captures leads, and increases sales automatically.</p>
+    <div class="hero-buttons">
+      <a href="./index.html#chatbox" class="btn">Talk to AI</a>
+      <a href="./services.html" class="btn">Get Started</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="refund-policy">
+  <h2>Refund Policy</h2>
+  <p class="refund-intro">
+    We believe in transparency and fairness. Our refund policy is designed to protect both our clients and our AI services.
+  </p>
+
+  <div class="refund-grid">
+
+    <div class="refund-card">
+      <h3>Eligible for Refund</h3>
+      <ul>
+        <li>Request made within 14 days of purchase</li>
+        <li>AI service not yet activated</li>
+        <li>Technical issue from our side</li>
+        <li>Wrong plan purchased by mistake</li>
+        <li>System setup not completed</li>
+        <li>Service not delivered</li>
+        <li>Billing error</li>
+        <li>Duplicate payment</li>
+        <li>Platform failure</li>
+        <li>Approved by support team</li>
+      </ul>
+    </div>
+
+    <div class="refund-card">
+      <h3>Not Eligible for Refund</h3>
+      <ul>
+        <li>AI already activated</li>
+        <li>Service used for more than 14 days</li>
+        <li>Manual customization completed</li>
+        <li>Client provided wrong data</li>
+        <li>Violation of terms</li>
+        <li>Business misuse</li>
+        <li>Third-party integration issues</li>
+        <li>Change of mind</li>
+        <li>Performance expectations</li>
+        <li>Abuse of service</li>
+      </ul>
+    </div>
+
+    <div class="refund-card">
+      <h3>Refund Process</h3>
+      <ul>
+        <li>Submit request via Contact page</li>
+        <li>Provide payment proof</li>
+        <li>Explain your issue</li>
+        <li>Our team reviews within 48 hours</li>
+        <li>Approval or rejection sent via email</li>
+        <li>Refund processed in 5 to 7 days</li>
+        <li>Payment returned to original method</li>
+        <li>Confirmation email sent</li>
+        <li>AI access removed</li>
+        <li>Case closed</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer-modern">
+  <div class="footer-content">
+
+    <!-- Brand Card -->
+    <div class="footer-card">
+      <h3>VirtualBrain AI</h3>
+      <p>Boost your business with AI assistants. Automate customer support, lead generation, and sales effortlessly.</p>
+    </div>
+
+    <!-- Links Card -->
+    <div class="footer-card">
+      <h4>Quick Links</h4>
+      <ul>
+         <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="./services.html"><i class="fas fa-robot"></i> Services</a></li>
+        <li><a href="./pricing.html"><i class="fas fa-dollar-sign"></i> Pricing</a></li>
+        <li><a href="./contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li>
+  <a href="./terms.html">
+    <i class="fas fa-file-contract"></i> Terms & Conditions
+  </a>
+</li>
+
+<li>
+  <a href="./privacy.html">
+    <i class="fas fa-user-shield"></i> Privacy Policy
+  </a>
+</li>
+
+<li>
+  <a href="./refund.html">
+    <i class="fas fa-undo-alt"></i> Refund Policy
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <!-- Contact Card -->
+    <div class="footer-card">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-envelope"></i> support@virtualbrain.ai</p>
+      <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 VirtualBrain AI. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+<script>
+// MOBILE NAVBAR SLIDE MENU
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+const closeMenu = document.getElementById('closeMenu');
+
+hamburger.addEventListener('click', ()=>{
+  navLinks.classList.add('open');
+});
+
+closeMenu.addEventListener('click', ()=>{
+  navLinks.classList.remove('open');
+});
+</script>

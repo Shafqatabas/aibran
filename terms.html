@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VirtualBrain AI – Smart AI Assistant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">VirtualBrain AI</div>
+
+  <!-- Hamburger for mobile -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <!-- Nav links -->
+  <div class="nav-links" id="navLinks">
+    <a href="./index.html">Home</a>
+    <a href="./services.html">Services</a>
+    <a href="./pricing.html">Pricing</a>
+    <a href="./contact.html">Contact</a>
+    <span class="close" id="closeMenu">&times;</span>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Power Your Business with AI</h1>
+    <p>VirtualBrain AI gives you a 24/7 intelligent assistant that chats with your customers, captures leads, and increases sales automatically.</p>
+    <div class="hero-buttons">
+      <a href="./index.html#chatbox" class="btn">Talk to AI</a>
+      <a href="./services.html" class="btn">Get Started</a>
+    </div>
+  </div>
+</div>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #05060a;
+      color: #eafcff;
+      line-height: 1.7;
+    }
+
+    .container {
+      padding: 80px 10%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #7C5CFF;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .terms-card {
+      background: #0c1b2a;
+      border: 1px solid #00f0ff33;
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .terms-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 50px rgba(124, 92, 255, 0.4);
+    }
+
+    .terms-card h2 {
+      font-size: 1.6rem;
+      color: #00F0FF;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .terms-card h2 i {
+      color: #7C5CFF;
+    }
+
+    .terms-card p, .terms-card ul {
+      font-size: 1rem;
+      color: #cfdcff;
+      margin-bottom: 15px;
+    }
+
+    .terms-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .terms-card ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #00f0ff22;
+    }
+
+    .back-home {
+      display: block;
+      width: max-content;
+      margin: 40px auto 0;
+      padding: 12px 25px;
+      border-radius: 25px;
+      background: linear-gradient(90deg, #7C5CFF, #00F0FF);
+      color: #05060a;
+      font-weight: bold;
+      text-align: center;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .back-home:hover {
+      background: #05060A;
+      color: #7C5CFF;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 900px){
+      .container {
+        padding: 50px 5%;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .terms-card h2 {
+        font-size: 1.4rem;
+      }
+
+      .terms-card p, .terms-card ul li {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Terms & Conditions</h1>
+
+  <div class="terms-card">
+    <h2><i class="fas fa-gavel"></i> Service Usage</h2>
+    <p>By using VirtualBrain AI, you agree to the following rules for proper and legal usage:</p>
+    <ul>
+      <li>Provide accurate business and contact information</li>
+      <li>Do not use AI for illegal or malicious purposes</li>
+      <li>AI is provided on an "as-is" basis without warranties</li>
+    </ul>
+  </div>
+
+  <div class="terms-card">
+    <h2><i class="fas fa-dollar-sign"></i> Payments</h2>
+    <p>All payments for AI services must follow these terms:</p>
+    <ul>
+      <li>Pricing depends on selected AI plan and business size</li>
+      <li>No refunds after 14 days unless approved by support</li>
+      <li>Taxes and third-party fees are non-refundable</li>
+    </ul>
+  </div>
+
+  <div class="terms-card">
+    <h2><i class="fas fa-shield-alt"></i> Liability</h2>
+    <p>VirtualBrain AI is not liable for damages resulting from the use of AI services:</p>
+    <ul>
+      <li>Indirect, incidental, or consequential damages are excluded</li>
+      <li>We are not responsible for third-party software integration issues</li>
+      <li>Users must follow all applicable laws</li>
+    </ul>
+  </div>
+
+  <a href="index.html" class="back-home">Back to Home</a>
+</div>
+
+
+
+
+
+
+<footer class="footer-modern">
+  <div class="footer-content">
+
+    <!-- Brand Card -->
+    <div class="footer-card">
+      <h3>VirtualBrain AI</h3>
+      <p>Boost your business with AI assistants. Automate customer support, lead generation, and sales effortlessly.</p>
+    </div>
+
+    <!-- Links Card -->
+    <div class="footer-card">
+      <h4>Quick Links</h4>
+      <ul>
+         <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="./services.html"><i class="fas fa-robot"></i> Services</a></li>
+        <li><a href="./pricing.html"><i class="fas fa-dollar-sign"></i> Pricing</a></li>
+        <li><a href="./contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li>
+  <a href="./terms.html">
+    <i class="fas fa-file-contract"></i> Terms & Conditions
+  </a>
+</li>
+
+<li>
+  <a href="./privacy.html">
+    <i class="fas fa-user-shield"></i> Privacy Policy
+  </a>
+</li>
+
+<li>
+  <a href="./refund.html">
+    <i class="fas fa-undo-alt"></i> Refund Policy
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <!-- Contact Card -->
+    <div class="footer-card">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-envelope"></i> support@virtualbrain.ai</p>
+      <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 VirtualBrain AI. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+<script>
+// MOBILE NAVBAR SLIDE MENU
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+const closeMenu = document.getElementById('closeMenu');
+
+hamburger.addEventListener('click', ()=>{
+  navLinks.classList.add('open');
+});
+
+closeMenu.addEventListener('click', ()=>{
+  navLinks.classList.remove('open');
+});
+</script>
+</body>
+</html>

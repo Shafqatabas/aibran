@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VirtualBrain AI – Smart AI Assistant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">VirtualBrain AI</div>
+
+  <!-- Hamburger for mobile -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <!-- Nav links -->
+  <div class="nav-links" id="navLinks">
+    <a href="./index.html">Home</a>
+    <a href="./services.html">Services</a>
+    <a href="./pricing.html">Pricing</a>
+    <a href="./contact.html">Contact</a>
+    <span class="close" id="closeMenu">&times;</span>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>Power Your Business with AI</h1>
+    <p>VirtualBrain AI gives you a 24/7 intelligent assistant that chats with your customers, captures leads, and increases sales automatically.</p>
+    <div class="hero-buttons">
+      <a href="./index.html#chatbox" class="btn">Talk to AI</a>
+      <a href="./services.html" class="btn">Get Started</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<section class="ai-pricing">
+  <h2>Choose Your Plan</h2>
+  <p>Pick the VirtualBrain AI plan that suits your business. Transparent pricing, no hidden fees.</p>
+
+  <div class="pricing-cards">
+
+    <!-- Starter Plan -->
+    <div class="pricing-card">
+      <i class="fa-solid fa-robot"></i>
+      <h3>Starter</h3>
+      <p>$149 / month</p>
+      <ul>
+        <li>Basic chatbot features</li>
+        <li>Website integration</li>
+        <li>500 queries/month</li>
+        <li>Email support</li>
+        <li>Simple automation</li>
+      </ul>
+      <a href="/contact" class="card-btn">Get Started</a>
+    </div>
+
+    <!-- Pro Plan -->
+    <div class="pricing-card popular">
+      <i class="fa-solid fa-rocket"></i>
+      <h3>Pro</h3>
+      <p>$289 / month</p>
+      <ul>
+        <li>Advanced chatbot & AI logic</li>
+        <li>Website + WhatsApp integration</li>
+        <li>2000 queries/month</li>
+        <li>Priority support</li>
+        <li>Appointment scheduling</li>
+      </ul>
+      <a href="/contact" class="card-btn">Get Started</a>
+    </div>
+
+    <!-- Enterprise Plan -->
+    <div class="pricing-card">
+      <i class="fa-solid fa-building"></i>
+      <h3>Enterprise</h3>
+      <p>Custom Pricing</p>
+      <ul>
+        <li>Full AI capabilities</li>
+        <li>Unlimited queries</li>
+        <li>Multi-platform integration</li>
+        <li>Dedicated account manager</li>
+        <li>24/7 priority support</li>
+      </ul>
+      <a href="/contact" class="card-btn">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer-modern">
+  <div class="footer-content">
+
+    <!-- Brand Card -->
+    <div class="footer-card">
+      <h3>VirtualBrain AI</h3>
+      <p>Boost your business with AI assistants. Automate customer support, lead generation, and sales effortlessly.</p>
+    </div>
+
+    <!-- Links Card -->
+    <div class="footer-card">
+      <h4>Quick Links</h4>
+      <ul>
+         <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="./services.html"><i class="fas fa-robot"></i> Services</a></li>
+        <li><a href="./pricing.html"><i class="fas fa-dollar-sign"></i> Pricing</a></li>
+        <li><a href="./contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+       <li>
+  <a href="./terms.html">
+    <i class="fas fa-file-contract"></i> Terms & Conditions
+  </a>
+</li>
+
+<li>
+  <a href="./privacy.html">
+    <i class="fas fa-user-shield"></i> Privacy Policy
+  </a>
+</li>
+
+<li>
+  <a href="./refund.html">
+    <i class="fas fa-undo-alt"></i> Refund Policy
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+    <!-- Contact Card -->
+    <div class="footer-card">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-envelope"></i> support@virtualbrain.ai</p>
+      <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 VirtualBrain AI. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+<script>
+// MOBILE NAVBAR SLIDE MENU
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+const closeMenu = document.getElementById('closeMenu');
+
+hamburger.addEventListener('click', ()=>{
+  navLinks.classList.add('open');
+});
+
+closeMenu.addEventListener('click', ()=>{
+  navLinks.classList.remove('open');
+});
+</script>
