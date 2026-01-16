@@ -30,7 +30,7 @@ async function sendUserMessage() {
     });
 
     const data = await res.json();
-    typing.textContent = data.reply || "No reply from AI";
+   typing.textContent = data.reply || data.message || "No reply from AI";
 
   } catch (err) {
     typing.textContent = "Connection error. AI server offline.";
@@ -41,6 +41,7 @@ sendBtn.onclick = sendUserMessage;
 inputField.addEventListener("keypress", e => {
   if (e.key === "Enter") sendUserMessage();
 });
+
 
 
 
