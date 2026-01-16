@@ -23,7 +23,7 @@ async function sendUserMessage() {
   chatWindow.appendChild(typing);
 
   try {
-    const res = await fetch("https://chat-router-ai--khralali05.replit.app/api/app", {
+    const res = await fetch("https://chat-router-ai--khralali05.replit.app", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message })
@@ -41,4 +41,5 @@ sendBtn.onclick = sendUserMessage;
 inputField.addEventListener("keypress", e => {
   if (e.key === "Enter") sendUserMessage();
 });
+
 
